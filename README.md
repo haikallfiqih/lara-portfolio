@@ -1,65 +1,88 @@
-<h1 align="center"><img src="https://assets.infyom.com/open-source/infyom-logo.png" alt="InfyOm"></h1>
+# Lara-Portfolio
 
-# Laravel Boilerplate for AdminLTE Theme
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hiikalll/lara-portfolio/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/hiikalll/lara-portfolio)](https://github.com/hiikalll/lara-portfolio/issues)
+[![GitHub stars](https://img.shields.io/github/stars/hiikalll/lara-portfolio)](https://github.com/hiikalll/lara-portfolio/stargazers)
 
-Laravel Boilerplate with [AdminLTE](https://adminlte.io/) Theme with [InfyOm Laravel Generator](https://github.com/InfyOmLabs/laravel-generator).
-Following things are ready to be used directly with AdminLTE Theme.
 
-- Signup
-- Login
-- Forgot Password
-- Password Reset
-- Home Layout with Sidebar
+Lara-Portfolio is a portfolio website built with Laravel and equipped with a Content Management System (CMS) feature. It allows you to easily manage and showcase your portfolio projects, update content, and personalize the website to suit your needs.
 
-## Documentation
+## Features
 
-Read [Documentation](https://infyom.com/open-source/laravelgenerator/docs/8.0/boilerplates) for detailed installation steps and usage.
+- **CMS**: Lara-Portfolio is equipped with a user-friendly CMS that enables you to manage your portfolio projects and content without any technical knowledge. You can add, edit, and remove projects, update project details, and showcase your work effortlessly.
+- **Project Management**: The CMS provides a simple and intuitive interface for managing your portfolio projects. You can upload project images, provide descriptions, specify project categories, and include links to live demos or source code repositories.
+- **Flexible Layout**: Lara-Portfolio offers a flexible and customizable layout that allows you to showcase your portfolio projects in a visually appealing manner. You can choose from various templates and customize the appearance of your portfolio to match your personal style.
+- **Responsive Design**: The portfolio website is designed to be responsive and mobile-friendly, ensuring that your projects look great on any device or screen size.
+- **User Authentication**: Lara-Portfolio includes user authentication functionality, allowing you to restrict access to the CMS and ensure that only authorized users can make changes to your portfolio.
 
-## Support Us
+## Installation
 
-We have created [14+ Laravel packages](https://github.com/InfyOmLabs) and invested a lot of resources into creating these all packages and maintaining them.
+To get started with Lara-Portfolio, follow these steps:
 
-You can support us by either sponsoring us or buying one of our paid products. Or help us by spreading the word about us on social platforms via tweets and posts.
+1. Clone the repository:
 
-### Buy our Paid Products
+   ```
+   git clone https://github.com/hiikalll/lara-portfolio.git
+   ```
+2. Navigate to the project directory:
 
-[![InfyChat](https://assets.infyom.com/open-source/new/infychat-banner.png)](https://1.envato.market/jWeAmM)
+   ```
+   cd lara-portfolio
+   ```
+3. Install the dependencies using Composer:
 
-You can also check out our other paid products on [CodeCanyon](https://1.envato.market/BXAnR1).
+   ```
+   composer install
+   ```
+4. Copy the `.env.example` file to `.env`:
 
-### Sponsors
+   ```
+   cp .env.example .env
+   ```
+5. Generate an application key:
 
-[Become a sponsor](https://opencollective.com/infyomlabs#sponsor) and get your logo on our README on Github with a link to your site.
+   ```
+   php artisan key:generate
+   ```
+6. Configure your database connection in the `.env` file.
+7. Run database migrations:
 
-<a href="https://opencollective.com/infyomlabs#sponsor"><img src="https://opencollective.com/infyomlabs/sponsors.svg?width=890"></a>
+   ```
+   php artisan migrate
+   ```
+8. Start the development server:
 
-### Backers
+   ```
+   php artisan serve
+   ```
 
-[Become a backer](https://opencollective.com/infyomlabs#backer) and get your image on our README on Github with a link to your site.
+   The portfolio website will now be accessible at `http://localhost:8000`.
 
-<a href="https://opencollective.com/infyomlabs#backer"><img src="https://opencollective.com/infyomlabs/backers.svg?width=890"></a>
+## Usage
 
-### Follow Us
+Once you have installed Lara-Portfolio and the development server is running, follow these steps to access the CMS and start managing your portfolio:
 
-- [Twitter](https://twitter.com/infyom)
-- [Facebook](https://www.facebook.com/infyom)
-- [LinkedIn](https://in.linkedin.com/company/infyom-technologies)
-- [Youtube](https://www.youtube.com/channel/UC8IvwfChD6i7Wp4yZp3tNsQ)
-- [Contact Us](https://infyom.com/contact-us)
+1. Register a new user account by navigating to `http://localhost:8000/register`.
+2. Log in with your newly created account at `http://localhost:8000/login`.
+3. After logging in, you will be redirected to the dashboard where you can add, edit, and remove portfolio projects.
+4. Customize the layout and appearance of your portfolio website by modifying the relevant files in the project.
 
-## Made with InfyOm Generator
+## Contributing
 
-Also, Do not forget to add your website to [Made with InfyOm Generator List](https://github.com/InfyOmLabs/laravel-generator/blob/develop/made-with-generator.md) list.
+Contributions to Lara-Portfolio are welcome! If you encounter any issues or have suggestions for improvement, please feel free to submit a pull request or open an issue on the [GitHub repository](https://github.com/hiikalll/lara-portfolio).
 
-## Security
-
-If you discover any security-related issues, create an issue using the issue tracker.
-
-## Credits
-
-- [InfyOm Technologies](https://github.com/infyomlabs)
-- [All Contributors](../../contributors)
+Please make sure to follow the [code of conduct](https://github.comhiikalll/lara-portfolio/blob/main/CODE_OF_CONDUCT.md) when contributing.
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+Lara-Portfolio is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT). See the [LICENSE](https://github.com/hiikalll/lara-portfolio/blob/main/LICENSE) file for more information.
+
+## Acknowledgementsa
+
+Lara-Portfolio is built upon the Laravel framework, which is developed and maintained by the Laravel community. We would like to express our gratitude to the Laravel team for their excellent work.
+
+## Contact
+
+If you have any questions or need assistance with Lara-Portfolio, please feel free to reach out to me
+-Email: [ekal.ehmm@gmail.com](mailto:ekal.ehmm@gmail.com)
+-WhatsApp: [![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat-green?logo=whatsapp)](https://wa.me/6285959561535)
